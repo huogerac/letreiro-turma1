@@ -1,0 +1,32 @@
+.board__row {
+  text-align: center;
+}
+.br__cell {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #c5c5c5;
+  display: inline-block;
+  margin: 2px;
+  line-height: 55px;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.br__cell--right {
+  background-color: #468f4c;
+  color: white;
+  border: 2px solid #468f4c;
+}
+
+.br__cell--position {
+  background-color: #aaac3e;
+  color: white;
+  border: 2px solid #aaac3e;
+}
+
+.br__cell--wrong {
+  background-color: #808080;
+  color: white;
+  border: 2px solid #808080;
+}
