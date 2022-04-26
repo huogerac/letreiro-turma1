@@ -3,14 +3,18 @@
 }
 .br__cell {
   width: 55px;
-  height: 55px;
   border: 2px solid #c5c5c5;
-  display: inline-block;
   margin: 2px;
   line-height: 55px;
   font-size: 2rem;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+  display: inline-block;
+}
+
+.br__cell:before {
+  display: inline-block;
+  content: " ";
 }
 
 .br__cell--right {

@@ -1,7 +1,7 @@
-Wordle
-Instalacao NODE
-
-
-Pintar uma letra na cor correta
-    adicionar a classe br__cell--right
-    
+ISSUES
+- Problema do ficar dando enter sem ter os 5 caracteres
+- Salvar o estado
+- Backspace quando nao tem letra
+- finalizar com palavra correta
+- finalizar após as 6 tentativas
+- refactoring
