@@ -1,7 +1,8 @@
 ISSUES
 - [OK] Salvar o estado
-- [  ] Backspace quando nao tem letra
-- [  ] Problema do ficar dando enter sem ter os 5 caracteres
-- [  ] finalizar com palavra correta
-- [  ] finalizar após as 6 tentativas
+- [OK] Backspace quando nao tem letra
+- [OK] Problema do ficar dando enter sem ter os 5 caracteres
+- [  ] nao permitir Shift, / ; etcc e numeros
+- [  ] finalizar com palavra correta (condição de parada)
+- [  ] finalizar após as 6 tentativas (condição de parada)
 - [  ] refactoring
