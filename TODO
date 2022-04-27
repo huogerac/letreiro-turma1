@@ -1,7 +1,7 @@
 ISSUES
-- Problema do ficar dando enter sem ter os 5 caracteres
-- Salvar o estado
-- Backspace quando nao tem letra
-- finalizar com palavra correta
-- finalizar após as 6 tentativas
-- refactoring
+- [OK] Salvar o estado
+- [  ] Backspace quando nao tem letra
+- [  ] Problema do ficar dando enter sem ter os 5 caracteres
+- [  ] finalizar com palavra correta
+- [  ] finalizar após as 6 tentativas
+- [  ] refactoring

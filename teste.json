@@ -1,0 +1,18 @@
+{
+  "boardState": ["world", "there", "", "", "", ""],
+  "evaluations": [
+    ["absent", "absent", "absent", "absent", "absent"],
+    ["present", "present", "present", "absent", "absent"],
+    null,
+    null,
+    null,
+    null
+  ],
+  "rowIndex": 2,
+  "solution": "heist",
+  "gameStatus": "IN_PROGRESS",
+  "lastPlayedTs": 1651014666265,
+  "lastCompletedTs": 1649990193966,
+  "restoringFromLocalStorage": null,
+  "hardMode": false
+}

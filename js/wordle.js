@@ -5,15 +5,34 @@ let palavraUsuario = [];
 
 var body = document.getElementsByTagName("body")[0];
 
+function inicializa() {
+  let palavra1 = localStorage.getItem("palavra1");
+  if (palavra1 != null) {
+    let palavra = palavra1.split(",");
+    for (let i in palavra) {
+      var el = document.getElementById("l1" + "c" + i);
+      el.innerHTML = palavra[i];
+    }
+    linha += 1;
+  }
+}
+
 body.addEventListener("keyup", function (event) {
   let ehLetra = false;
-  if (event.key == "Backspace" && palavraUsuario.length > 0) {
-    var el = document.getElementById(
-      "l" + linha + "c" + (palavraUsuario.length - 1)
-    );
-    el.innerHTML = "";
-    palavraUsuario.pop();
-  } else if (event.key == "Enter" && palavraUsuario.length == 5) {
+
+  if (event.key == "Backspace") {
+    if (palavraUsuario.length > 0) {
+      var el = document.getElementById(
+        "l" + linha + "c" + (palavraUsuario.length - 1)
+      );
+      el.innerHTML = "";
+      palavraUsuario.pop();
+    }
+  } else if (event.key == "Enter") {
+    if (palavraUsuario.length != 5) {
+      return;
+    }
+
     let palavraCorreta =
       palavraUsuario.join("").toLowerCase() == PALAVRA_CORRETA.toLowerCase();
     console.log("VALIDACAO:", palavraCorreta);
@@ -44,6 +63,8 @@ body.addEventListener("keyup", function (event) {
         }
       }
     }
+    localStorage.setItem(`palavra${linha}`, palavraUsuario);
+
     linha += 1;
     palavraUsuario = [];
   } else if (palavraUsuario.length < 5) {
@@ -77,3 +98,5 @@ function click_correto() {
   el.classList.remove("br__cell--position");
   el.classList.add("br__cell--right");
 }
+
+inicializa();
